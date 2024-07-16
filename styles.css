@@ -36,6 +36,8 @@ body {
     overflow: hidden;
     text-align: center;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 .movie img {
     width: 100%;
@@ -59,6 +61,7 @@ body {
     cursor: pointer;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    margin-top: auto;
 }
 .movie button:hover {
     background-color: #555;
