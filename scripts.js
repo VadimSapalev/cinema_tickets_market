@@ -37,5 +37,19 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function(){ 
   var button = document.getElementById('film7-button');
   button.addEventListener('click', function() {
-      window.location.href = 'movie_pages/movie7_page.html'; // Замість 'anotherPage.html' вкажіть шлях до потрібної сторінки
+      window.location.href = 'movie_pages/movie7_page.html'; 
   })});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var button = document.getElementById('purchase-button');
+  
+    button.addEventListener('click', function() {
+        var userChoice = confirm('Ви впевнені, що хочете купити квиток?');
+  
+        if (userChoice) {
+            button.style.backgroundColor = 'red';
+            button.disabled = true;
+            button.classList.add('disabled');
+        }
+    });
+});
