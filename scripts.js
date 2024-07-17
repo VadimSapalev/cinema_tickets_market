@@ -41,15 +41,17 @@ document.addEventListener('DOMContentLoaded', function(){
   })});
 
 document.addEventListener('DOMContentLoaded', function() {
-    var button = document.getElementById('purchase-button');
-  
-    button.addEventListener('click', function() {
-        var userChoice = confirm('Ви впевнені, що хочете купити квиток?');
-  
-        if (userChoice) {
-            button.style.backgroundColor = 'red';
-            button.disabled = true;
-            button.classList.add('disabled');
-        }
+    var buttons = document.querySelectorAll('.seat');
+
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var userChoice = confirm('Ви впевнені, що хочете купити квиток?');
+
+            if (userChoice) {
+                button.style.backgroundColor = 'red';
+                button.disabled = true;
+                button.classList.add('disabled');
+            }
+        });
     });
 });
