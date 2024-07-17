@@ -38,4 +38,4 @@ document.addEventListener('DOMContentLoaded', function(){
   var button = document.getElementById('film7-button');
   button.addEventListener('click', function() {
       window.location.href = 'movie_pages/movie7_page.html'; // Замість 'anotherPage.html' вкажіть шлях до потрібної сторінки
-  })};
+  })});
